@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/4cb935443c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init("5lDQ2fsinXAaz-OgN");
+})();
+</script>
+  </head>
+  <body>
+    <section class="landing__page">
+      <nav>
+        <figure><img src="./assets/logo.svg" class="logo" /></figure>
+        <ul class="nav__links">
+          <li class="nav__link">
+            <a
+              href="#about"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >About</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#about"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Projects</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#about"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Contact</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#about"
+              class="nav__link--anchor"
+              ><img
+                src="./assets/contrast.svg"
+                class="dark__mode--switch click"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+
+      <header>
+        <h1 class="title">HEY</h1>
+        <h1 class="title">I'm <span class="purple">Mingma</span></h1>
+        <p class="header__para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quam
+          voluptas veritatis consequuntur. Quaerat ipsam harum saepe id
+          doloremque? Mollitia praesentium et dolorem quae consequatur dolore
+          nostrum laboriosam fugiat ipsa.
+        </p>
+        <div>
+          <a href="https://www.instagram.com/empty_cerpa/" target="_blank"
+            ><i class="fa-brands fa-instagram social__media click"></i
+          ></a>
+          <a href="https://www.facebook.com/profile.php?id=100008773265462" target="_blank"
+            ><i class="fa-brands fa-facebook social__media click"></i
+          ></a>
+        </div>
+      </header>
+
+      <div>
+        <a href="#email" class="white email__button"
+          ><i class="fa-solid fa-envelope email click"></i
+        ></a>
+      </div>
+
+      <a href="#scrollprojects" class="scroll">
+        <div class="scroll__icon"></div>
+      </a>
+
+
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__contact--title">Here's some info about me.</h3>
+          <h4 class="modal__contact--sub-title">Frontend Software Engineer.
+          </h4>
+          <p class="moda__contact--para">I'm a 21 year-old Australian frontend software engineer with experience developing websites for top-tech companies like Google and Canva.
+           <br> I currently solve extremely difficult engineering problems every day with </br><span class="purple">React</span>, <span class="purple">TypeScript</span> and <span class="purple">MobX</span> in Canva's Video team.</p>
+
+            <div class="languages">
+              <div class="languages__wrapper">
+                <div class="language">
+                  <figure class="language__image"><img src='./assets/html-5.png' class="language__img"></figure>
+                  <span class="language__name">HTML</span>
+                </div>
+                <div class="language">
+                  <figure class="language__image"><img src='./assets/css-3.png' class="language__img"></figure>
+                  <span class="language__name">CSS</span>
+                </div>
+                <div class="language">
+                  <figure class="language__image"><img src='./assets/js.png' class="language__img"></figure>
+                  <span class="language__name">JavaScript</span>
+                </div>
+                <div class="language">
+                  <figure class="language__image"><img src='./assets/typescript.png' class="language__img"></figure>
+                  <span class="language__name">TypeScript</span>
+                </div>
+                <div class="language">
+                  <figure class="language__image"><img src='./assets/mobx.png' class="language__img"></figure>
+                  <span class="language__name">MobX</span>
+                </div>
+                <div class="language">
+                  <figure class="language__image"><img src='./assets/physics.png' class="language__img"></figure>
+                  <span class="language__name">React</span>
+                </div>
+                <div class="language">
+                  <figure class="language__image"><img src='./assets/vue.png' class="language__img"></figure>
+                  <span class="language__name">Vue</span>
+                </div>
+                <div class="language">
+                  <figure class="language__image"><img src='./assets/nuxt.png' class="language__img"></figure>
+                  <span class="language__name">Nuxt</span>
+                </div>
+
+              </div>
+
+    
+            </div>
+        </div>
+
+
+
+
+        <div class="modal__half modal__contact">
+          <h3 class="modal__contact--title">Let's have a chat!</h3>
+          <h4 class="modal__contact-sub--title">I'm currently open to new opportunities</h4>
+          <form class="contact__form" onsubmit="contact(event)">
+            <div class="form__items">
+            <label class="item__label">Name</label>
+            <input class="item__input" type="text" name='user_name' required>
+          </div>  
+          
+            <div class="form__items">
+            <label class="item__label">Email</label>
+            <input class="item__input" type="email" name="user_email" required>
+          </div>  
+          
+            <div class="form__items">
+            <label class="item__label">Message</label>
+            <textarea class="textarea__input" name="message" required></textarea>
+          </div>  
+          
+          <button class="submit__button">
+            Send it my way 
+          </button>
+
+        
+        </form>
+        <div class="modal__overlay modal__overlay--loading">
+          <i class="fa-solid fa-spinner"></i>
+        </div>
+        <div class="modal__overlay modal__overlay--success">
+          <h1 class="success__title">You have successfully send your message. I'll reach out to you soon</h1>
+        </div>
+
+        <div class="modal__exit--button">
+        <i class="fa-solid fa-xmark modal__exit click"></i>
+        </div>
+  
+        
+      </div>
+
+     
+      
+
+       
+
+            
+
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    <section class="projects__page">
+      <div class="container">
+        <div class="row">
+          <h1 class="projects__title">
+            Here are some of my <span class="purple">projects</span>
+          </h1>
+          <ul class="project__list">
+            <li class="project">
+              <div class="project__wrapper">
+                <img src="./assets/blinker mockup.png" class="project__img" />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Frontend Simplified
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    HTML, CSS, JAVASCRIPT, VUE,VUEX
+                  </h4>
+                  <p class="project__description--para">
+                    Frontend Simplified is a side project built to not only
+                    teach people how to code, but teach them how to get job
+                    ready in the quickest way possible. Users of this platform
+                    can join my 2,300+ member community including engineers from
+                    Google, Canva, Atlassian, Apple, Microsoft and Salesforce.
+                    The entire platform and courses was built by myself and I'm
+                    planning to release the MVP in the next few weeks.
+                  </p>
+                  <div class="">
+                    <a href="#link" class="">
+                      <i class="fa-solid fa-link project__description--link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="project">
+              <div class="project__wrapper">
+                <img src="./assets/google mockup.png" class="project__img" />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">Google In-Store</h3>
+                  <h4 class="project__description--sub-title">
+                    HTML, CSS, JAVASCRIPT, VUE,VUEX
+                  </h4>
+                  <p class="project__description--para">
+                    Google In-Store is a platform allowing Google retail
+                    employees to report any issues with their store products.
+                    Once an issue is reported, it is posted to an API which
+                    populates a separate platform's frontend - which is used by
+                    Google's vendors to fix the issue as soon as possible. I was
+                    the sole front-end developer of this application.
+                  </p>
+                  <div class="">
+                    <a href="#link" class="">
+                      <i class="fa-solid fa-link project__description--link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/Frontend Simplified.png"
+                  class="project__img"
+                />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    E-Portfolio YouTube Tutorial
+                  </h3>
+                  <h4 class="project__description--sub-title">HTML, CSS,</h4>
+                  <p class="project__description--para">
+                    E-Portfolio built to help my social media followers learn
+                    basic CSS properties, layout and best practises - along with
+                    including tips along the way to help them land their first
+                    job.
+                  </p>
+                  <div class="">
+                    <a href="#link" class="">
+                      <i class="fa-solid fa-link project__description--link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <footer>
+    <div class="footer__row">
+    <div class="footer__logo">
+      <img src="./assets/logo.svg" class=" logo__footer" alt=""></img>
+
+    </div>
+    <ul class="footer__links">
+     <li><a href="#github" class="footer__link link__hover-effect link__hover-effect--white">Github</a></li>
+     <li><a href="#github" class="footer__link link__hover-effect link__hover-effect--white">Linkedin</a></li>
+     <li><a href="#github" class="footer__link link__hover-effect link__hover-effect--white">Contact</a></li>
+     <li><a href="#github" class="footer__link link__hover-effect link__hover-effect--white">Resume</a></li>
+     
+    </ul>
+
+    <p class="footer__copyright">Copyright <span> <i class="fa-regular fa-copyright"></i></span>2022 Mingma Tenzing Sherpa</p>
+    </div>
+
+  </footer>
+</html>
