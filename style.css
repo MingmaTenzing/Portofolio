@@ -387,9 +387,21 @@ footer{
     border-radius: 20px;
     overflow: hidden;
     display: flex;
+    visibility: hidden;
+    z-index: -1;
+    transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
+    
+}
+.modal__open .modal{
+    z-index: 60;
     box-shadow: 0px 20px 80px rgb(0,0,0,0.55);
+    visibility: visible;
+
 }
 
+.modal__open .modal__about{
+    transform: translateX(0%);
+}
 
 .modal__half{
     width: 50%;
@@ -402,6 +414,8 @@ footer{
 
 .modal__about{
     background-color:rgb(245, 245, 245);
+    transform: translate(-110%);
+    transition: all ease 300ms;
 
 }
 
@@ -409,7 +423,13 @@ footer{
     background-color: #242424;
     color: white;
     position: relative;
+    transform: translate(110%);
+    transition: all ease 300ms;
     
+}
+
+.modal__open .modal__contact {
+    transform: translate(0%);
 }
 
 .moda__contact--para{
@@ -589,13 +609,15 @@ footer{
     height: 100%;
     top: 0;
     left: 0;
-    display: flex;
+  display: none;
     justify-content: center;
     align-items: center;
 
    z-index: -1;
 
     }
+
+
 .modal__overlay--loading{
    
     background-color: #7645d9;
@@ -606,7 +628,11 @@ footer{
 
 .modal__overlay--visible {
     z-index: 1;
+    display: flex;
 }
+
+
+
 
 .fa-spinner {
     animation: loading 750ms infinite ;
@@ -650,4 +676,17 @@ footer{
     right: 40px;
     font-size: 36px;
     z-index: 100;
+}
+
+
+nav, .scroll__icon, header{
+    opacity: 1;
+    visibility: visible;
+    transition: all ease 600ms;
+}
+
+
+.modal__open nav, .modal__open .scroll__icon, .modal__open header{
+    opacity: 0;
+    visibility: hidden;
 }

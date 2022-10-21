@@ -78,7 +78,7 @@ emailjs.init("5lDQ2fsinXAaz-OgN");
       </header>
 
       <div>
-        <a href="#email" class="white email__button"
+        <a href="#email" class="white email__button" onclick="toggleModal()"
           ><i class="fa-solid fa-envelope email click"></i
         ></a>
       </div>
@@ -141,6 +141,9 @@ emailjs.init("5lDQ2fsinXAaz-OgN");
 
 
         <div class="modal__half modal__contact">
+          <div class="modal__exit--button">
+            <i class="fa-solid fa-xmark modal__exit click" onclick="closemodalbutton()"></i>
+            </div>
           <h3 class="modal__contact--title">Let's have a chat!</h3>
           <h4 class="modal__contact-sub--title">I'm currently open to new opportunities</h4>
           <form class="contact__form" onsubmit="contact(event)">
@@ -172,9 +175,7 @@ emailjs.init("5lDQ2fsinXAaz-OgN");
           <h1 class="success__title">You have successfully send your message. I'll reach out to you soon</h1>
         </div>
 
-        <div class="modal__exit--button">
-        <i class="fa-solid fa-xmark modal__exit click"></i>
-        </div>
+       
   
         
       </div>
