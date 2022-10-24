@@ -48,3 +48,18 @@ function closemodalbutton() {
   isModalOpen = false;
 
 }
+
+
+let isdarkmodeon = false;
+function enabledarkmode(){
+ isdarkmodeon = !isdarkmodeon;
+ if (isdarkmodeon) {
+  document.body.classList += " dark__mode"
+ }
+
+ else {
+  document.body.classList.remove ('dark__mode')
+ }
+
+
+}

@@ -22,7 +22,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top:20px
+    padding-top:20px
 }
 
 .nav__links{
@@ -41,10 +41,6 @@ nav{
     
 }
 
-.dark__mode--switch{
-    width: 20px;
-    height: 20px;
-}
 
 .click {
     cursor: pointer;
@@ -121,6 +117,13 @@ bottom:70px;
 }
 
 
+
+.dark__mode .email {
+    background-color: #7645d9;
+    
+}
+
+
 .scroll__icon{
     width: 20px;
     height: 35px;
@@ -179,7 +182,7 @@ bottom:70px;
 }
 
 .container{
-    margin-top:45px;
+    padding-top:45px;
 }
 
 
@@ -272,7 +275,7 @@ bottom:70px;
 
 
 .project{
-    margin-bottom: 100px;
+    padding-bottom: 100px;
 }
 
 
@@ -281,6 +284,12 @@ bottom:70px;
     width: 70px;
     
 }
+
+.dark__mode .logo{
+    filter: invert(0);
+}
+
+
 .footer__logo{
     display: flex;
     justify-content: center;
@@ -289,7 +298,7 @@ bottom:70px;
 
 }
 footer{
-    background-color: #1c1d25;
+    background-color: #242424;
     padding: 100px;
 }
 
@@ -689,4 +698,34 @@ nav, .scroll__icon, header{
 .modal__open nav, .modal__open .scroll__icon, .modal__open header{
     opacity: 0;
     visibility: hidden;
+}
+
+.dark__mode .nav__link--anchor,
+.dark__mode .title,
+.dark__mode .header__para,
+.dark__mode .projects__title{
+
+    color: white
+
+    
+}
+
+
+.dark__mode .container{
+color: #242424;
+}
+.dark__mode section {
+    background-color: #242424;
+}
+
+section{
+    transition: all 300ms ease;
+}
+.dark__mode .scroll__icon {
+    border-color: white;
+    
+}
+
+.dark__mode .scroll__icon:after {
+    background-color: white;
 }
