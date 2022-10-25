@@ -882,12 +882,9 @@ background-color: white;
         font-size: 14px;
     }
 
-    .modal {
-      
-
-    }
-
-    .modal__half {
-        
+   
+    
+    .shape {
+        display: none;
     }
 }
