@@ -885,6 +885,9 @@ background-color: white;
    
     
     .shape {
-        display: none;
+        width: 20px;
+        filter: blur(2px);
+        z-index: -1;
+        
     }
 }
