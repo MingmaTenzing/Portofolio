@@ -727,5 +727,61 @@ section{
 }
 
 .dark__mode .scroll__icon:after {
+    
+background-color: white;
+}
+
+.dark__mode .link__hover-effect:hover:after {
     background-color: white;
 }
+
+.dark__mode .link__hover-effect--white:after {
+    background-color: black;
+}
+
+.shape{
+    position: fixed;
+}
+
+.shape__0{
+ top: 15vh;
+ left: 5vw;   
+}
+
+.shape__1{
+    top:15vh;
+    left: 50vw;
+}
+.shape__2{
+ top: 15vh;
+ left: 80vw;   
+}
+.shape__3{
+ top: 50vh;
+ left: 5vh;   
+}
+.shape__4{
+ top: 50vh;
+ left: 50vw;   
+}
+.shape__5{
+ top: 50vh;
+ left: 80vw;   
+}
+.shape__6{
+ top: 80vh;
+ left: 5vw;   
+}
+.shape__7{
+ top: 80vh;
+ left: 50vw;   
+}
+.shape__8{
+ top: 80vh;
+ left: 80vw;   
+}
+.shape__9{
+ top: 80vh;
+ left: 80vw;   
+}
+
