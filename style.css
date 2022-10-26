@@ -785,9 +785,21 @@ background-color: white;
  left: 80vw;   
 }
 
-
+/* SMALL PHOES, TABLETS, LARGE SMART PHONES */
 
 @media (max-width: 768px) {
+
+    nav{
+        width: 100%;
+        padding: 20px;
+
+    }
+
+    .logo{
+        width: 30px;
+    }
+
+   
 
     header{
         padding: 0;
@@ -798,96 +810,176 @@ background-color: white;
         padding-right: 20px;
     }
     .title {
-        font-size: 50px;
+        font-size: 64px;
         
     }
 
 
     .header__para {
-        font-size: 16px;
+        font-size: 24px;
     }
 
-    .projects__title {
-        font-size: 25px;
+
+    .email{
+      right: 100px;
+        
     }
-    .project__wrapper{
+
+
+
+
+
+   
+   
+    
+  
+
+
+    .modal {
+        top: 0;
+        left: 0;
+        transform: none;
+        display: flex;
+        flex-direction: column-reverse;
         width: 100%;
-        max-width: 350px;
-        margin: 0 auto;
-        max-height: 400px;
+        height: auto;
+        border-radius: 0;
     }
 
-    .project__img{
-       width: 100%;
-       height: 300px
-    }
-
-    .project__description {
-        top: 50%;
-        left: 50px;
-        max-width: 200px;
-    }
-
-    .project__description--title {
-       font-size: 16px; 
-    }
-
-    .project__description--sub-title{
-        font-size: 10px;
-    }
-
-    .project__description--para{
-        font-size: 10px;
+    .modal__half{
+        width: 100%;
     }
 
     footer{
-        padding: 40px;
+        position: relative;
     }
 
-    .logo__footer{
-        width: 40px;
-    }
+}
 
-    .footer__link{
-        font-size: 10px;
-    }
-
-    .footer__copyright{
-        font-size: 10px;
-    }
-
-    .email {
-        position: fixed;
-        right: 20px;
-        font-size: 20px;
+@media (max-width: 480px) {
+    .title{
+        font-size: 40px;
 
     }
-
-    nav{
-        width: 100%;
-        max-width: 700px;
-        margin: 0 auto;
-        padding: 20px;
-
-    }
-    .logo{
-        width: 20px;
-    }
-
-    .nav__link {
-        font-size: 12px;
-    }
-
-    .social__media{
+    .nav__link{
         font-size: 14px;
     }
 
-   
-    
-    .shape {
-        width: 20px;
-        filter: blur(2px);
-        z-index: -1;
+    .header__para {
+        font-size: 12px;
+        text-align: left;
+        max-width: 300px;
+    }
+
+    .social__media{
+        font-size: 20px;
+    }
+
+    .email {
+        right: 20px;
+        font-size: 24px;
+    }
+
+    .projects__title {
+        font-size: 30px;
+    }
+
+    .project__wrapper{
+        width: 100%;
+
+    }
+
+    .nav__link:first-child{
+        display: none;
+    }
+
+    .project__description--para{
+        display: none;
+    }
+
+    .project__wrapper{
+        width: 100%;
+        height: 200px;
         
     }
+
+    .project{
+        padding: 20px;
+    }
+
+    .project__img{
+        width: 100%;
+        height: 200px;
+    }
+
+    .project__description--title{
+        font-size: 20px;
+    }
+
+    .project__description--sub-title{
+        font-size: 12px;
+    }
+
+    .project__description{
+       text-align: center;
+       left: 0;
+       width: 100%;
+
+    }
+
+    footer {
+        position: relative;
+        padding: 0;
+        padding-bottom: 40px;
+        padding-top: 80px;
+    }
+
+    .logo__footer{
+        width: 30px;
+    }
+    .footer__copyright {
+        font-size: 12px;
+    }
+
+    .modal__about{
+        padding:0;
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+       
+    }
+
+    .moda__contact--para{
+        font-size: 12px;
+        
+    }
+
+    .modal__contact--title {
+        font-size: 24px;
+    }
+
+    .language {
+        padding: 10px;
+    }
+
+    .languages__wrapper{
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+
+   .language__img{
+    width: 40px;
+    height: auto;
+  
+   }
+
+   .language__name{
+    font-size: 10px;
+   }
 }
+
+
+
