@@ -8,6 +8,9 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 .logo {
     filter: invert(1);
@@ -111,6 +114,7 @@ bottom:70px;
    background-color:#1c1d25;
    color: white;
    z-index: 1;
+   box-shadow: 0 12px 30px 0 rgb(0,0,0,0.2);
  
     
     
@@ -942,10 +946,7 @@ background-color: white;
     }
 
     .modal__about{
-        padding:0;
-        padding-top: 20px;
-        padding-left: 10px;
-        padding-right: 10px;
+        
         text-align: center;
        
     }

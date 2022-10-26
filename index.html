@@ -34,14 +34,14 @@ emailjs.init("5lDQ2fsinXAaz-OgN");
           </li>
           <li class="nav__link">
             <a
-              href="#about"
+              href="#projects__page"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
               >Projects</a
             >
           </li>
           <li class="nav__link">
             <a
-              href="#about"
+              href="#about" onclick="toggleModal()"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
               >Contact</a
             >
@@ -76,12 +76,12 @@ emailjs.init("5lDQ2fsinXAaz-OgN");
       </header>
 
       <div>
-        <a href="#email" class="white email__button" onclick="toggleModal()"
+        <a href="#" class="white email__button" onclick="toggleModal()"
           ><i class="fa-solid fa-envelope email click"></i
         ></a>
       </div>
 
-      <a href="#scrollprojects" class="scroll">
+      <a href="#projects__page" class="scroll">
         <div class="scroll__icon"></div>
       </a>
 
@@ -217,7 +217,7 @@ emailjs.init("5lDQ2fsinXAaz-OgN");
 
 
 
-    <section class="projects__page">
+    <section id="projects__page">
       <div class="container">
         <div class="row">
           <h1 class="projects__title">
@@ -319,7 +319,7 @@ emailjs.init("5lDQ2fsinXAaz-OgN");
     <ul class="footer__links">
      <li><a href="#github" class="footer__link link__hover-effect link__hover-effect--white">Github</a></li>
      <li><a href="#github" class="footer__link link__hover-effect link__hover-effect--white">Linkedin</a></li>
-     <li><a href="#github" class="footer__link link__hover-effect link__hover-effect--white">Contact</a></li>
+     <li><a href="#" class="footer__link link__hover-effect link__hover-effect--white" onclick="toggleModal()">Contact</a></li>
      <li><a href="#github" class="footer__link link__hover-effect link__hover-effect--white">Resume</a></li>
      
     </ul>
